@@ -1,0 +1,6 @@
+@import "mixins.scss";
+
+.home {
+  @include BaseCont;
+  display: grid;
+}

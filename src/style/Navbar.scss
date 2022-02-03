@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.Navbar {
+  &-container {
+    height: 8vh;
+    width: 100%;
+    background-color: $Dark;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  &-link {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    transition: all 0.7s ease;
+    font-size: 1.5rem;
+    &:hover {
+      color: rgb(231, 231, 231);
+    }
+  }
+}

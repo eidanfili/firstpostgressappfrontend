@@ -1,0 +1,77 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.add-friend {
+  @include BaseCont;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  &_form {
+    height: 40vh;
+    width: 40vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.5fr;
+    align-items: center;
+    justify-items: center;
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    border-radius: 3px;
+    background-color: rgb(66, 87, 116);
+  }
+
+  &_title {
+    align-self: center;
+    justify-self: center;
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  &_input {
+    margin-top: 20px;
+    min-height: 23%;
+    max-height: 45%;
+    min-width: 72%;
+    max-width: 77%;
+
+    padding-inline: 5px;
+    text-align: center;
+
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(99, 100, 104, 0.712);
+    color: rgb(0, 0, 0);
+
+    &::placeholder {
+      color: rgb(163, 163, 163);
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+
+      height: 65%;
+      width: 100%;
+    }
+  }
+  &_button {
+    min-height: 30%;
+    max-height: 50%;
+    min-width: 45%;
+    max-width: 50%;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+  }
+}
